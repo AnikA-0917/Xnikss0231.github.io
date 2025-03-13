@@ -1,0 +1,97 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    color: #222; /* Darker text for better readability */
+    text-align: center;
+    margin: 0;
+}
+
+/* Layout Fix: Ensures Footer Stays at Bottom */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+.content {
+    flex: 1; 
+    font-size: 26px; 
+    line-height: 2.2; 
+    padding: 30px; 
+    color: #111;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.content p {
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 90%;
+}
+
+header, nav, footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 42px; 
+    font-weight: bold;
+    color: #5a3e1b; 
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: #5a3e1b; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 24px; 
+}
+
+nav a:hover {
+    color: #333;  
+}
+
+.footer {
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 10px;
+    font-size: 22px; 
+    color: #333;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+img.profile-pic {
+    max-width: 350px; 
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Uniform Image Sizes for Sections */
+.image-container img {
+    width: 300px; /* Adjusted for consistency */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px; /* Optional for a smoother look */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+}
